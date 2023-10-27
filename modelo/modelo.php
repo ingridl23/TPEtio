@@ -11,6 +11,7 @@ class modelo {
           $consulta= 'INSERT INTO registro (id_user, nombre, apellido, email, contraseña) VALUES (?,?,?,?)';
           $query= $this->conexion->prepare($consulta);
           $query->execute([$nombre,$apellido,$email,$contraseña]);
+          $resp=$query->fetchAll(PDO::FETCH_OBJ);
     }
 }
 

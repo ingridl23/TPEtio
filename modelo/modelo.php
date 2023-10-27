@@ -8,7 +8,7 @@ class modelo {
             $this->conexion= new PDO('mysql:host=localhost;'.'dbname= tpe_tio;charset=utf8', 'root', '');
         }
         function BaseDeDatos(){
-  
+          $user= xxx;
     }
 }
 

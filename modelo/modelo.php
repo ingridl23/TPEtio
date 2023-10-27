@@ -8,7 +8,9 @@ class modelo {
             $this->conexion= new PDO('mysql:host=localhost;'.'dbname= tpe_tio;charset=utf8', 'root', '');
         }
         function BaseDeDatos(){
-          $user= xxx;
+          $consulta= 'INSERT INTO registro (id_user, nombre, apellido, email, contraseña) VALUES (?,?,?,?)';
+          $query= $this->conexion->prepare($consulta);
+          $query->execute([$nombre,$apellido,$email,$contraseña]);
     }
 }
 

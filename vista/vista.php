@@ -12,4 +12,7 @@ class vista{
     function showHeader(){
         $this->smart->display('template/header.tpl');
     }
+    function showLogin(){
+        $this->smart->display('template/login.tpl');
+    }
 }

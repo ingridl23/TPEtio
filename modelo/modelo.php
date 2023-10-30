@@ -13,6 +13,14 @@ class modelo {
           $query->execute([$nombre,$apellido,$email,$contraseña]);
           $resp=$query->fetchAll(PDO::FETCH_OBJ);
     }
+
+    function getUserByPassword($usuario){
+        $query = $this->conexion->prepare("SELECT * FROM registro WHERE nombre= ? ");
+        $query->execute([$usuario]);
+        $resultado=$query->fetch(PDO::FETCH_OBJ);
+        return $resultado; //retorna un obj con todos los atributos luego se sigue en el controlador para sesiones//
+    }
+
 }
 
 

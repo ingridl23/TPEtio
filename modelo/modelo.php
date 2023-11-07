@@ -5,7 +5,7 @@ class modelo {
         private $conexion;
 
         function __construct(){
-            $this->conexion= new PDO('mysql:host=localhost;'.'dbname= tpe_tio;charset=utf8', 'root', '');
+            $this->conexion= new PDO('mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB . ';charset=utf8', MYSQL_USER, MYSQL_PASS);
         }
         function BaseDeDatos($nombre,$apellido,$email,$contraseña){
           // Hashear la contraseña antes de almacenarla

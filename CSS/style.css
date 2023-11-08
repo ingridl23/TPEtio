@@ -22,19 +22,8 @@ main{
     align-items: center;
     
 }
-.etiqueta{
-   
-    display: block;
-    text-align: center;
-    font-size: large;
-    color:#d6e1c7;
-}
 
-.inputs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 form{
     font-size: 15px;

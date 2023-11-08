@@ -1,5 +1,4 @@
 <?php
-
 include_once "modelo/modelo.php";
 require_once "vista/vista.php";
 

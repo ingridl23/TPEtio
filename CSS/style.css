@@ -37,9 +37,9 @@ main{
 }
 
 form{
-    font-size: 10px;
+    font-size: 15px;
     background-color: black;
-    color:rgb(223, 52, 52);
+    color: white;
     border: 0px;
     margin: 0 auto;
     height: 40%;
